@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    
+<!-- header section -->
+
+
+
+
+<nav class="main-navbar">
+    <div class="navbar-container">
+        <a href="#" class="logo"><i class="fas fa-book"></i> <span class="store-name">Vadlamuri Book Store</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html" id="nav-home">Home</a></li>
+            <li><a href="shop.html" id="nav-shop">Shop</a></li>
+            <li><a href="about.html" id="nav-about">About</a></li>
+            <li><a href="contact.html" id="nav-contact">Contact</a></li>
+        </ul>
+        <form id="search-form" action="https://www.google.com/search" method="get" class="search-form">
+            <input type="search" name="q" placeholder="search here..." id="search-box">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="icons">
+            <a href="Registration.html" class="fas fa-user" id="user-icon" title="User"></a>
+            <a href="#" class="fas fa-heart" id="wishlist-icon" title="Wishlist"></a>
+            <a href="#" class="fas fa-shopping-cart" id="cart-icon" title="Cart"></a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- header section ends-->
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#contact" class="fas fa-blog"></a>
+    </nav>
+
+   <div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+    <form action="">
+        <h3>Login</h3>
+        <span>Username</span>
+        <input type="email" name="email" class="box" placeholder="enter your email" id="">
+        <span>Password</span>
+        <input type="password" name="password" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="remember" id="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <input type="submit" value="Sign in" class="btn">
+        <p>Forgot password? <a href="#">Click here</a></p>
+        <p>Don't have an account?<a href="http://127.0.0.1:5500/Clone/Registration.html"> Create one</a></p>
+    </form>
+   </div>
+
+<!-- home section -->
+     
+   <section class="home" id="home">
+    <div class="row">
+        <div class="content">
+            <h3>upto 75%</h3>
+            <p>"A reader lives a thousand lives before he dies . . . ...
+                "Until I feared I would lose it, I never loved to read. ..."You can never get a cup of tea large enough or a book long enough to suit </p>
+                <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="images\img1.jpg" alt="Book 1"></a>
+                <a href="#" class="swiper-slide"><img src="images\img2.jpg" alt="Book 2"></a>
+                <a href="#" class="swiper-slide"><img src="images/img3.webp" alt="Book 3"></a>
+                <a href="#" class="swiper-slide"><img src="images/img4.webp" alt="Book 4"></a>
+                <a href="#" class="swiper-slide"><img src="images/img5.webp" alt="Book 5"></a>
+                <a href="#" class="swiper-slide"><img src="images/img6.webp" alt="Book 6"></a>
+            </div>
+            <img src="" alt="">
+        </div>
+    </div>
+   </section>
+   <!-- home ends -->
+
+
+
+
+   <!-- icons sections -->
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-plane"></i>
+            <div class="content">
+                <h3>free shipping</h3>
+                <p>order over $100</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>secure payment</h3>
+                <p>100 secure payment</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>easy returns</h3>
+                <p>10 days returns</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>24/7 support</h3>
+                <p>Call us anytime</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- icons sections ends -->
+
+<!-- featured sections -->
+
+<section class="featured" id="featured">
+  <h1 class="heading"><span>Featured Books</span></h1>
+  <div class="featured-grid">
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F1.jpg" alt="The Great Gatsby">
+      </div>
+      <div class="content">
+        <h3>The Great Gatsby</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+        <button class="btn add-to-cart" data-title="The Great Gatsby" data-price="15.99" data-image="images/F1.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="The Great Gatsby" data-price="15.99" data-image="images/F1.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F2.jpg" alt="To Kill a Mockingbird">
+      </div>
+      <div class="content">
+        <h3>To Kill a Mockingbird</h3>
+        <div class="price">$12.99 <span>$18.99</span></div>
+        <button class="btn add-to-cart" data-title="To Kill a Mockingbird" data-price="12.99" data-image="images/F2.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="To Kill a Mockingbird" data-price="12.99" data-image="images/F2.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F3.jpg" alt="1984">
+      </div>
+      <div class="content">
+        <h3>1984</h3>
+        <div class="price">$10.99 <span>$15.99</span></div>
+        <button class="btn add-to-cart" data-title="1984" data-price="10.99" data-image="images/F3.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="1984" data-price="10.99" data-image="images/F3.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F4.jpg" alt="Pride and Prejudice">
+      </div>
+      <div class="content">
+        <h3>Pride and Prejudice</h3>
+        <div class="price">$20.99 <span>$25.99</span></div>
+        <button class="btn add-to-cart" data-title="Pride and Prejudice" data-price="20.99" data-image="images/F4.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="Pride and Prejudice" data-price="20.99" data-image="images/F4.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F5.jpg" alt="The Hobbit">
+      </div>
+      <div class="content">
+        <h3>The Hobbit</h3>
+        <div class="price">$18.99 <span>$22.99</span></div>
+        <button class="btn add-to-cart" data-title="The Hobbit" data-price="18.99" data-image="images/F5.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="The Hobbit" data-price="18.99" data-image="images/F5.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F6.jpg" alt="Moby Dick">
+      </div>
+      <div class="content">
+        <h3>Moby Dick</h3>
+        <div class="price">$14.99 <span>$19.99</span></div>
+        <button class="btn add-to-cart" data-title="Moby Dick" data-price="14.99" data-image="images/F6.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="Moby Dick" data-price="14.99" data-image="images/F6.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F7.jpg" alt="War and Peace">
+      </div>
+      <div class="content">
+        <h3>War and Peace</h3>
+        <div class="price">$13.99 <span>$17.99</span></div>
+        <button class="btn add-to-cart" data-title="War and Peace" data-price="13.99" data-image="images/F7.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="War and Peace" data-price="13.99" data-image="images/F7.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F8.jpg" alt="Jane Eyre">
+      </div>
+      <div class="content">
+        <h3>Jane Eyre</h3>
+        <div class="price">$11.99 <span>$16.99</span></div>
+        <button class="btn add-to-cart" data-title="Jane Eyre" data-price="11.99" data-image="images/F8.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="Jane Eyre" data-price="11.99" data-image="images/F8.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F9.jpg" alt="The Catcher in the Rye">
+      </div>
+      <div class="content">
+        <h3>The Catcher in the Rye</h3>
+        <div class="price">$17.99 <span>$23.99</span></div>
+        <button class="btn add-to-cart" data-title="The Catcher in the Rye" data-price="17.99" data-image="images/F9.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="The Catcher in the Rye" data-price="17.99" data-image="images/F9.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="images/F10.jpg" alt="Little Women">
+      </div>
+      <div class="content">
+        <h3>Little Women</h3>
+        <div class="price">$19.99 <span>$24.99</span></div>
+        <button class="btn add-to-cart" data-title="Little Women" data-price="19.99" data-image="images/F10.jpg">Add to Cart</button>
+        <button class="btn add-to-wishlist" data-title="Little Women" data-price="19.99" data-image="images/F10.jpg">Add to Wishlist</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- featured sections ends -->
+
+
+<!-- newsletter section -->
+
+<section class="newsletter">
+    <form action="">
+        <h3>Subscribe for the latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" class="box">
+        <input type="submit" value="Subscribe" class="btn">
+     </form>
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- arrivals section starts -->
+
+<section class="arrivals" id="arrivals">
+    <h1 class="heading"><span>new arrivals</span></h1>
+    <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="images/img1.jpg" alt="The Silent Patient">
+                </div>
+                <div class="content">
+                    <h3>The Silent Patient</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btn add-to-cart" data-title="The Silent Patient" data-price="15.99" data-image="images/img1.jpg">Add to Cart</button>
+                    <button class="btn add-to-wishlist" data-title="The Silent Patient" data-price="15.99" data-image="images/img1.jpg">Add to Wishlist</button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="images/img2.jpg" alt="Where the Crawdads Sing">
+                </div>
+                <div class="content">
+                    <h3>Where the Crawdads Sing</h3>
+                    <div class="price">$13.99<span>$18.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btn add-to-cart" data-title="Where the Crawdads Sing" data-price="13.99" data-image="images/img2.jpg">Add to Cart</button>
+                    <button class="btn add-to-wishlist" data-title="Where the Crawdads Sing" data-price="13.99" data-image="images/img2.jpg">Add to Wishlist</button>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="images/img3.webp" alt="Educated">
+                </div>
+                <div class="content">
+                    <h3>Educated</h3>
+                    <div class="price">$12.99<span>$16.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="btn add-to-cart" data-title="Educated" data-price="12.99" data-image="images/img3.webp">Add to Cart</button>
+                    <button class="btn add-to-wishlist" data-title="Educated" data-price="12.99" data-image="images/img3.webp">Add to Wishlist</button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- arrivals section ends -->
+
+<!-- deals section -->
+
+<section class="deal">
+
+    <div class="content">
+        <h3>deal of the day</h3>
+        <h1>upto 50% off</h1>
+        <p>"A reader lives a thousand lives before he dies . . . ... "Until I feared I would lose it, I never loved to read. ..."You can never get a cup of tea large enough or a book long enough to suit</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+    <div claa="image">
+        <img src="images/DealOfday.jpg" alt="">
+    </div>
+</section>
+
+<!-- deals section -->
+
+<!-- reviews secction -->
+
+<section class="reviews" id="reviews">
+    <h1 class="heading"><span>Client's reviews</span></h1>
+    <div class="reviews-grid">
+        <div class="box">
+            <img src="images/rev1.webp" alt="John Doe">
+            <h3>John Doe</h3>
+            <p>"A fantastic bookstore! Great selection and fast shipping. Highly recommended."</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/rev1.webp" alt="Jane Smith">
+            <h3>Jane Smith</h3>
+            <p>"Excellent customer service and a wonderful variety of books. Will shop again!"</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/rev1.webp" alt="Emily Johnson">
+            <h3>Emily Johnson</h3>
+            <p>"Loved the deals and the easy-to-use website. My books arrived in perfect condition."</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/rev1.webp" alt="Michael Brown">
+            <h3>Michael Brown</h3>
+            <p>"Great prices and fast delivery. I found books here I couldn't find anywhere else."</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/rev1.webp" alt="Sarah Lee">
+            <h3>Sarah Lee</h3>
+            <p>"The best online bookstore experience I've had. Highly recommend to all book lovers!"</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- reviews secction ends -->
+
+<!-- blogs section -->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading"><span>our blogs</span></h1>
+
+    <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="images/blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog.title.goes.here</h3>
+                    <p>Loerem ipsum dolor sit ameet cinsectpr adispasing elur optio odio</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="images/blog1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog.title.goes.here</h3>
+                    <p>Loerem ipsum dolor sit ameet cinsectpr adispasing elur optio odio</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="images/blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog.title.goes.here</h3>
+                    <p>Loerem ipsum dolor sit ameet cinsectpr adispasing elur optio odio</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="images/blog1.jpg" alt="">
+                </div>
+                <div class="content"> 
+                    <h3>blog.title.goes.here</h3>
+                    <p>Loerem ipsum dolor sit ameet cinsectpr adispasing elur optio odio</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="images/blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog.title.goes.here</h3>
+                    <p>Loerem ipsum dolor sit ameet cinsectpr adispasing elur optio odio</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section -->
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our locations</h3>
+            <a href="#"><i class="fas fa-map-marker-alt">india</i></a>
+            <a href="#"><i class="fas fa-map-marker-alt">USA</i></a>
+            <a href="#"><i class="fas fa-map-marker-alt">Russia</i></a>
+            <a href="#"><i class="fas fa-map-marker-alt">France</i></a>
+            <a href="#"><i class="fas fa-map-marker-alt">Japan</i></a>
+            <a href="#"><i class="fas fa-map-marker-alt">Africa</i></a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"><i class="fas fa-arrow-right">Home</i></a>
+            <a href="#"><i class="fas fa-arrow-right">Featured</i></a>
+            <a href="#"><i class="fas fa-arrow-right">Arrivals</i></a>
+            <a href="#"><i class="fas fa-arrow-right">Reviews</i></a>
+            <a href="#"><i class="fas fa-arrow-right">Blogs</i></a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-arrow-right">account info</i></a>
+            <a href="#"><i class="fas fa-arrow-right">ordered items</i></a>
+            <a href="#"><i class="fas fa-arrow-right">privacu policy</i></a>
+            <a href="#"><i class="fas fa-arrow-right">Payment method</i></a>
+            <a href="#"><i class="fas fa-arrow-right">Our services</i></a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"><i class="fas fa-phone">+91 9649262763</i></a>
+            <a href="#"><i class="fas fa-phone">+111-222-3333</i></a>
+            <a href="#"><i class="fas fa-envelope">vadlamuri@gamil.com</i></a>
+            <img src="images/Worldmap.webp" class="map" alt="">
+        </div>
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+    <div class="credit">created by <span>Mr.V V V Karthik</span> | all rights reserved | </div>
+</section>
+
+
+<!-- footer section ends -->
+
+<!-- loader section -->
+
+<div class="loader-container">
+    <img src="" alt="">
+</div>
+
+<!-- loader section nds -->
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="index.js"></script>
+
+<!-- Wishlist Sidebar -->
+<div id="wishlist-sidebar" class="cart-sidebar hidden">
+  <div id="wishlist-content">
+    <button id="close-wishlist" class="close-btn">Close</button>
+    <ul id="wishlist-items">
+      <li>Your wishlist is empty.</li>
+    </ul>
+  </div>
+</div>
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar hidden">
+  <div id="cart-content">
+    <button id="close-cart" class="close-btn">Close</button>
+    <ul id="cart-items">
+      <li>Your cart is empty.</li>
+    </ul>
+    <p id="total">Total: $0.00</p>
+  </div>
+</div>
+
+</body>
+</html>
