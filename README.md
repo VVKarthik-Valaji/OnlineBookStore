@@ -26,6 +26,13 @@ A simple, elegant online bookstore built with **HTML**, **CSS**, and **JavaScrip
 
 ---
 
+## 🖼️ Screenshots
+
+![image](https://github.com/user-attachments/assets/28066f4d-7d1c-4115-aada-ce11e919926d)
+
+
+---
+
 ## 📁 Folder Structure
 
 - `OnlineBookStore/`
@@ -74,4 +81,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🌐 Live Demo
 
+➡️ [View Website](https://online-book-store-ecru.vercel.app/)
 
