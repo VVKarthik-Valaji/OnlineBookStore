@@ -26,14 +26,15 @@ A simple, elegant online bookstore built with **HTML**, **CSS**, and **JavaScrip
 
 ---
 
-## 📂 Folder Structure
-OnlineBookStore/
-│
-├── images/ # All images used in the website
-├── index.html # Main landing page
-├── Registration.html # Registration form
-├── style.css # All styles and layout
-└── script.js # Functionality: cart, wishlist, etc.
+## 📁 Folder Structure
+
+- `OnlineBookStore/`
+  - `images/` – All image assets (books, icons, etc.)
+  - `index.html` – Homepage of the bookstore
+  - `Registration.html` – User registration form
+  - `style.css` – Main CSS file for styling
+  - `script.js` – JavaScript for cart, wishlist, and interactivity
+
 
 
 ---
